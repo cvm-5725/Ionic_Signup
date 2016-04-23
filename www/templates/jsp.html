@@ -1,0 +1,48 @@
+<ion-view view-title="Fun Time">
+  <ion-content>
+  	<ion-header-bar class="padding">
+  	<div class="icon">
+  	
+  	</div>
+  	<h4> Type Anything Here And You Will See It Typed As It Is Below</h4>
+  	<div class="icon">
+  	</div>
+  	</ion-header-bar>
+  	<br>
+    <br>
+    <br>
+    <div class="list">
+  		<label class="item item-input item-floating-label">
+  		  <span class="input-label">First Name</span>
+   				 <input type="text" ng-model="first"placeholder="First Name">
+  		</label>
+  	<label class="item item-input item-floating-label">
+   		 <span class="input-label">Last Name</span>
+   			 <input type="text" ng-model="second" placeholder="Last Name">
+  	</label>
+  <label class="item item-input item-floating-label">
+    <span class="input-label">Email</span>
+    <input type="text" ng-model="email" placeholder="Email">
+  </label>
+</div>
+	
+	<ion-card class="item item-text-wrap item-royal">
+	<ion-item classs="item title">
+	          TYPE ANYTHING ABOVE AND SEE IT BELOW
+	</ion-item>
+	</ion-card>
+
+	<ion-card class="item item-text-wrap">
+	<ion-item>
+	<p>{{first}}</p>
+	</ion-item>
+	<ion-item>
+	<p>{{second}}</p>
+	</ion-item>
+	<ion-item>
+	<p>{{email}}</p>
+	</ion-item>
+	</ion-card>
+  </ion-content>
+
+</ion-view>

@@ -1,0 +1,33 @@
+<ion-view view-title="Profile">
+    <ion-content class="has-header">
+        <div class="list card">
+            <div class="item">
+                <ion-card class="item item-positive">
+                    <io-item>
+                        Users Details - Name,Profile Pic,Gender,Email!!!
+                    </io-item>
+                </ion-card>
+                <br>
+                <br>
+                    <h1>{{user.name}}</h1>
+                <br>
+                <p>{{user.city}}</p>
+            </div>
+            <div class="item item-body">
+                <img src="http://graph.facebook.com/{{user.id}}/picture?width=270&height=270"/>
+                <br>
+                <br>
+            </div>
+        </div>
+        <ion-card class="item item-positive">
+        </ion-card>
+        <ion-card class="item item-royal">
+                    <io-item>
+                    <p><b>{{user.gender}}</b></p>
+                    <br>
+                    <p>{{user.email}}</p>
+                    <br>
+                    </io-item>
+                </ion-card>
+    </ion-content>
+</ion-view>
